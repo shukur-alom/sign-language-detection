@@ -1,0 +1,5 @@
+#python 3.8.8
+tensorflow==2.5.0
+opencv-python==4.5.1.48
+mediapipe==0.8.5
+numpy==1.19.3
