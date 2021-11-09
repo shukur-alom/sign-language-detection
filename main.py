@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 
 # initialize mediapipe
 mpHands = mp.solutions.hands
-hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.7)
+hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.9)
 mpDraw = mp.solutions.drawing_utils
 
 # Load the gesture recognizer model
@@ -47,7 +47,6 @@ while True:
                 lmx = int(lm.x * x)
                 lmy = int(lm.y * y)
                 landmarks.append([lmx, lmy])
-
             # Drawing landmarks on frames
             mpDraw.draw_landmarks(frame, handslms, mpHands.HAND_CONNECTIONS)
 
