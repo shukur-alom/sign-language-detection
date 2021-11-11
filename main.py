@@ -15,9 +15,7 @@ mpDraw = mp.solutions.drawing_utils
 model = load_model('mp_hand_gesture')
 
 # Load class names
-f = open('gesture.names', 'r')
-classNames = f.read().split('\n')
-f.close()
+classNames = ["Okay","Peace","Thumbs up","Thumbs down","Call me","Stop","I Love You","Hello","No","Smile"]
 
 # Initialize the webcam
 cap = cv2.VideoCapture(0)
