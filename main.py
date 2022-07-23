@@ -18,7 +18,8 @@ model = load_model('mp_hand_gesture')
 classNames = ["Okay","Peace","Thumbs up","Thumbs down","Call me","Stop","I Love You","Hello","No","Smile"]
 
 # Initialize the webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('rtsp://admin:EVOMEA@192.168.1.4:554/H.264')
+
 while True:
     # Read each frame from the webcam
     _, frame = cap.read()
