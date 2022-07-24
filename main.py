@@ -1,5 +1,4 @@
 # import necessary packages
-
 import cv2
 import numpy as np
 import mediapipe as mp
@@ -18,7 +17,7 @@ model = load_model('mp_hand_gesture')
 classNames = ["Okay","Peace","Thumbs up","Thumbs down","Call me","Stop","I Love You","Hello","No","Smile"]
 
 # Initialize the webcam
-cap = cv2.VideoCapture('rtsp://admin:EVOMEA@192.168.1.4:554/H.264')
+cap = cv2.VideoCapture(0)
 
 while True:
     # Read each frame from the webcam
