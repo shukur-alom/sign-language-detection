@@ -1,0 +1,8 @@
+#python 3.8.8
+#tensorflow<=2.8.0
+tensorflow<=2.8.0
+streamlit==1.28.1
+mediapipe<=0.8.11
+numpy>=1.19.3
+opencv-python>=4.9.0.80
+asyncio>=3.4.3
