@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Shukur533:$HF_TOKEN@huggingface.co/spaces/HF_USERNAME/DSLAb-Sign-Language-Setection main
+        run: git push https://Shukur533:$HF_TOKEN@huggingface.co/spaces/Shukur533/DSLAb-Sign-Language-Setection main
